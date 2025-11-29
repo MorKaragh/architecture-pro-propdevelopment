@@ -1,0 +1,135 @@
+@startuml PropDevelopment containers diagram
+!include assets/C4_templates/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Container diagram for PropDevelopment
+
+Person(client, "Клиент", "Клиент")
+Person(owner, "Собственник", "Клиент")
+Person(manager, "Менеджер", "Работает с клиентами и объектами недвижимости, администрирует онлайн-сделки")
+Person(accountant, "Бухгалтер", "Ведёт бухгалтерский учёт")
+Person(business_analyst, "Бизнес-аналитик", "Оптимизирует процессы и развивает прикладные бизнес-системы. Администрирует системы")
+Person(bi_analyst, "Аналитик BI", "Анализирует данные и готовит отчётность")
+
+
+System_Boundary(propdev, "PropDevelopment") {
+
+    Container_Boundary(client_services, "Группа сервисов для клиентов") {
+        Container(showcase_sales, "Витрина продаж", "JavaScript, React", "Витрина для подбора и бронирования объектов недвижимости")
+
+        Container(client_mart_estate_app, "client-mart-estate-app", "Kotlin, SpringBoot", "Приложение для управления информацией об объектах недвижимости")
+        ContainerDb(client_mart_estate_db, "client-mart-estate-db", "PostgreSQL", "База данных объектов недвижимости")
+
+        Container(client_mart_app, "client-mart-app", "Kotlin, SpringBoot", "Приложение для предоставления информации об объектах недвижимости, проведения онлайн-сделок")
+        ContainerDb(client_mart_db, "client-mart-db", "PostgreSQL", "База данных для хранения информации об объектах недвижимости и сделкам по ним")
+
+        Container(client_tour_app, "client-tour-app", "Kotlin, SpringBoot", "Приложение для проведения 3D-тура по объекту недвижимости (онлайн-тур)")
+        ContainerDb(client_tour_db, "client-tour-db", "PostgreSQL", "База данных проведения онлайн-тура")
+
+        Container(client_crm_app, "client-crm-app", "SpringBoot, ElasticSearch, Dynamics CRM", "Система управления клиентскими данными")
+        ContainerDb(crm_db, "crm-db", "MSSQL", "База данных системы CRM")
+    }
+
+    Container_Boundary(client_services, "группа сервисо ЖКУ") {
+        Container(showcase_tenant, "Витрина сервисов для собственников", "Mobile app (iOS, Android)", "Мобильные приложения для собственников")
+
+        Container(tenant_core_app, "tenant-core-app", "Kotlin, SpringBoot", "Приложение для предоставления услуг собственникам")
+        ContainerDb(tenant_core_db, "tenant-core-db", "PostgreSQL", "База данных услуг ЖКХ по собственникам")
+
+        Container(crm, "CRM", "Kotlin, Spring Boot", "Система управления данными собственников")
+        ContainerDb(crm_tenant_db, "crm-tenant-db", "PostgreSQL", "База данных CRM по собственникам")
+    }
+
+    Container_Boundary(storage_group, "хранение данных") {
+        Container(data_warehouse, "Хранилище данных", "Greenplum", "Единое хранилище данных для всех систем компании")
+        ContainerDb(dwh_storage, "DWH Хранилище", "S3", "Физическое хранилище данных DWH")
+    }
+
+    Container_Boundary(accounting_components, "бухгалтерские компоненты") {
+        Container(accountant_service, "accountant-service-1", "Keycloak", "Система бухгалтерского учёта")
+        ContainerDb(auth_db_account, "auth-db-2", "PostgreSQL", "База данных сервиса аутентификации бухгалтеров")
+        Container(active_directory_business, "Active Directory", "MS Active Directory", "Служба каталогов, которая обслуживает прикладные бизнес-системы и системы обработки данных")
+    }
+
+    Container(auth_service_buyer, "auth-service-1", "Keycloak", "Сервис аутентификации покупателей")
+    ContainerDb(auth_db_buyer, "auth-db-1", "PostgreSQL", "База данных сервиса аутентификации покупателей")
+
+}
+
+System_Ext(utility_provider, "Поставщик ресурсов ЖКХ", "Внешняя система")
+System_Ext(payment_system, "Платёжная система", "Провайдер онлайн-платежей")
+System_Ext(registry_org, "Государственные регистрационные органы", "Отвечают за регистрационные действия с объектами недвижимости")
+
+' === СВЯЗИ С ЛЮДЬМИ ===
+
+Rel(manager, propdev, "Работает с", "")
+Rel(business_analyst, propdev, "Работает с", "")
+Rel(accountant, accountant_service, "Использует", "REST")
+Rel(client, showcase_sales, "Использует", "через Firewall")
+Rel(owner, showcase_tenant, "Использует", "через Firewall")
+Rel(bi_analyst, data_warehouse, "Анализирует данные", "")
+
+' === СВЯЗИ ВИТРИНЫ ПРОДАЖ ===
+
+Rel(showcase_sales, auth_service_buyer, "Регистрация, Аутентификация", "REST")
+Rel(showcase_sales, client_crm_app, "", "REST")
+Rel(showcase_sales, client_mart_estate_app, "Получить данные по объектам недвижимости", "REST")
+Rel(showcase_sales, client_tour_app, "", "REST")
+Rel(showcase_sales, client_crm_app, "Регистрация клиента, карточки клиента, профиль клиента", "REST")
+
+' === СВЯЗИ CLIENT-MART ===
+
+Rel(client_mart_app, client_mart_db, "Читает/Записывает", "JDBC")
+Rel(client_mart_estate_app, client_mart_estate_db, "Читает/Записывает", "JDBC")
+Rel(client_tour_app, client_tour_db, "Читает/Записывает", "JDBC")
+
+' === СВЯЗИ CRM ===
+
+Rel(client_crm_app, crm_db, "Читает/Записывает", "JDBC")
+Rel(client_crm_app, client_mart_app, "Публикация каталога объектов", "Kafka")
+Rel(client_crm_app, client_tour_app, "Публикация каталога объектов", "Kafka")
+Rel(client_crm_app, active_directory_finance, "Аутентификация менеджеров", "LDAP")
+
+' === СВЯЗИ С ХРАНИЛИЩЕМ ДАННЫХ ===
+
+Rel(client_mart_db, data_warehouse, "Передача сырых данных", "CDC")
+Rel(crm_db, data_warehouse, "Передача сырых данных", "CDC")
+Rel(client_mart_estate_db, data_warehouse, "Передача сырых данных", "CDC")
+Rel(tenant_core_db, data_warehouse, "Передача сырых данных", "CDC")
+Rel(crm_tenant_db, data_warehouse, "Передача сырых данных", "CDC")
+
+Rel(data_warehouse, dwh_storage, "Хранит данные", "JDBC")
+Rel(data_warehouse, active_directory_finance, "Аутентификация бизнес-аналитика", "LDAP")
+
+' === СВЯЗИ БУХГАЛТЕРИИ ===
+
+Rel(accountant_service, auth_db_account, "", "JDBC")
+Rel(accountant_service, active_directory_finance, "Аутентификация", "")
+Rel(accountant_service, active_directory_business, "Аутентификация", "LDAP")
+
+' === СВЯЗИ TENANT-CORE ===
+
+Rel(tenant_core_app, tenant_core_db, "Читает/Записывает", "JDBC")
+Rel(tenant_core_app, crm, "Получение клиентских данных", "REST")
+Rel(tenant_core_app, payment_system, "Обработка платежей", "REST")
+Rel(tenant_core_app, utility_provider, "Получение данных ЖКХ", "REST, WS")
+
+' === СВЯЗИ CRM ДЛЯ СОБСТВЕННИКОВ ===
+
+Rel(crm, crm_tenant_db, "Читает/Записывает", "JDBC")
+Rel(crm, active_directory_finance, "Аутентификация менеджеров", "LDAP")
+
+' === СВЯЗИ ВИТРИНЫ СОБСТВЕННИКОВ ===
+
+Rel(showcase_tenant, auth_service_buyer, "Регистрация, Аутентификация", "REST")
+Rel(showcase_tenant, crm, "Получение данных", "REST")
+Rel(showcase_tenant, tenant_core_app, "Использование услуг", "REST, WS")
+
+' === СВЯЗИ С ВНЕШНИМИ СИСТЕМАМИ ===
+
+Rel(client_mart_app, registry_org, "СМЭВ", "SOAP")
+
+Rel(auth_service_buyer, auth_db_buyer, "СМЭВ", "SOAP")
+
+@enduml
