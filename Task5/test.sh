@@ -159,19 +159,19 @@ echo ""
 # Проверка 5: Существование сетевых политик
 echo "=== Проверка сетевых политик ==="
 test_check "NetworkPolicy allow-front-end-to-back-end-api существует" \
-    "kubectl get networkpolicy allow-front-end-to-back-end-api" \
+    "kubectl get networkpolicies allow-front-end-to-back-end-api -n default" \
     "success" || true
 
 test_check "NetworkPolicy allow-back-end-api-to-front-end существует" \
-    "kubectl get networkpolicy allow-back-end-api-to-front-end" \
+    "kubectl get networkpolicies allow-back-end-api-to-front-end -n default" \
     "success" || true
 
 test_check "NetworkPolicy allow-admin-front-end-to-admin-back-end-api существует" \
-    "kubectl get networkpolicy allow-admin-front-end-to-admin-back-end-api" \
+    "kubectl get networkpolicies allow-admin-front-end-to-admin-back-end-api -n default" \
     "success" || true
 
 test_check "NetworkPolicy allow-admin-back-end-api-to-admin-front-end существует" \
-    "kubectl get networkpolicy allow-admin-back-end-api-to-admin-front-end" \
+    "kubectl get networkpolicies allow-admin-back-end-api-to-admin-front-end -n default" \
     "success" || true
 
 echo ""
@@ -200,10 +200,24 @@ echo ""
 
 # Проверка 7: Сетевое соединение (запрещённые)
 echo "=== Проверка заблокированных сетевых соединений ==="
+
+# Проверяем, включен ли Calico
+CALICO_ENABLED=false
+if kubectl get pods -n kube-system 2>/dev/null | grep -q "calico"; then
+    CALICO_ENABLED=true
+elif kubectl get daemonset -n kube-system calico-node 2>/dev/null >/dev/null 2>&1; then
+    CALICO_ENABLED=true
+fi
+
 echo -e "${YELLOW}Тест: front-end НЕ может подключиться к admin-back-end-api${NC}"
 if kubectl run test-front-end-blocked-$(date +%s) --rm -i --restart=Never --image=alpine --labels role=front-end -- sh -c "wget -qO- --timeout=3 http://admin-back-end-api-app" > /dev/null 2>&1; then
-    echo -e "${YELLOW}⚠ ПРЕДУПРЕЖДЕНИЕ${NC}: front-end может подключиться к admin-back-end-api (возможно, NetworkPolicy не поддерживается в minikube)"
-    echo "   Для включения NetworkPolicy в minikube выполните: minikube addons enable calico"
+    if [ "$CALICO_ENABLED" = true ]; then
+        echo -e "${RED}✗ ПРОВАЛЕН${NC}: front-end может подключиться к admin-back-end-api (соединение должно быть заблокировано)"
+        ((TESTS_FAILED++))
+    else
+        echo -e "${YELLOW}⚠ ПРЕДУПРЕЖДЕНИЕ${NC}: front-end может подключиться к admin-back-end-api (NetworkPolicy не работают без Calico)"
+        echo "   Для включения NetworkPolicy перезапустите minikube: minikube stop && minikube start --cni=calico"
+    fi
 else
     echo -e "${GREEN}✓ ПРОЙДЕН${NC}: front-end не может подключиться к admin-back-end-api (соединение заблокировано)"
     ((TESTS_PASSED++))
@@ -211,8 +225,13 @@ fi
 
 echo -e "${YELLOW}Тест: admin-front-end НЕ может подключиться к back-end-api${NC}"
 if kubectl run test-admin-front-end-blocked-$(date +%s) --rm -i --restart=Never --image=alpine --labels role=admin-front-end -- sh -c "wget -qO- --timeout=3 http://back-end-api-app" > /dev/null 2>&1; then
-    echo -e "${YELLOW}⚠ ПРЕДУПРЕЖДЕНИЕ${NC}: admin-front-end может подключиться к back-end-api (возможно, NetworkPolicy не поддерживается в minikube)"
-    echo "   Для включения NetworkPolicy в minikube выполните: minikube addons enable calico"
+    if [ "$CALICO_ENABLED" = true ]; then
+        echo -e "${RED}✗ ПРОВАЛЕН${NC}: admin-front-end может подключиться к back-end-api (соединение должно быть заблокировано)"
+        ((TESTS_FAILED++))
+    else
+        echo -e "${YELLOW}⚠ ПРЕДУПРЕЖДЕНИЕ${NC}: admin-front-end может подключиться к back-end-api (NetworkPolicy не работают без Calico)"
+        echo "   Для включения NetworkPolicy перезапустите minikube: minikube stop && minikube start --cni=calico"
+    fi
 else
     echo -e "${GREEN}✓ ПРОЙДЕН${NC}: admin-front-end не может подключиться к back-end-api (соединение заблокировано)"
     ((TESTS_PASSED++))
