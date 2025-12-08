@@ -1,0 +1,291 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0" version="29.2.1">
+  <diagram name="Page-1" id="gJ1z7zeKGGONKjTIJrXT">
+    <mxGraphModel dx="2975" dy="1588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffcc99;strokeColor=#36393d;fontSize=16;fontStyle=1" value="&lt;div&gt;Безопасность&lt;/div&gt;&lt;div&gt;данных&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="350" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-9" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-3" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#cdeb8b;strokeColor=#36393d;" value="&lt;div&gt;Публичные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="355" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-10" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-4" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#cdeb8b;strokeColor=#36393d;" value="&lt;div&gt;Внутренние&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="140" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-8" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-22" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-5" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#cdeb8b;strokeColor=#36393d;" value="&lt;div&gt;Конфиденциальные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="570" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-7" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#cdeb8b;strokeColor=#36393d;" value="&lt;div&gt;Секретные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="355" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-25" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-11" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="&lt;div&gt;Характеристики объектов недвижимости на&lt;/div&gt;&lt;div&gt;продажу или под аренду&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="335" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-26" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-13" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="контент онлайн-туров по объектам на продажу или под аренду" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-16" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-15" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Логи (без ПДн) и показатели телеметрии системы" vertex="1">
+          <mxGeometry height="60" width="160" x="-100" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-37" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-17" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Бухгалтерская информация компании" vertex="1">
+          <mxGeometry height="60" width="160" x="770" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-34" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-18" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Данные сделок клиентов и собственников" vertex="1">
+          <mxGeometry height="60" width="160" x="770" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Персональные данные клиентов и собственников" vertex="1">
+          <mxGeometry height="60" width="160" x="770" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-24" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-23" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Каталог объектов недвижимости на продажу или под аренду" vertex="1">
+          <mxGeometry height="60" width="160" x="155" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-31" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-30" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Технические детали партнёрских интеграций" vertex="1">
+          <mxGeometry height="60" width="160" x="-100" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-33" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-32" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Учетные записи пользователей" vertex="1">
+          <mxGeometry height="60" width="160" x="420" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-36" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-35" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Учётные записи сторонних сервисов (в первую очередь токены, ключи API)" vertex="1">
+          <mxGeometry height="60" width="160" x="590" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-39" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-38" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Платёжная информация клиентов и собственников" vertex="1">
+          <mxGeometry height="60" width="160" x="80" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-41" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-40" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Внутренние отчёты и аналитика (агрегированные данные без ПДн)" vertex="1">
+          <mxGeometry height="60" width="160" x="-100" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-43" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-42" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Данные услуг ЖКХ пользователей" vertex="1">
+          <mxGeometry height="60" width="160" x="770" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-58" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=30;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#bac8d3;strokeColor=#23445d;" value="Риски" vertex="1">
+          <mxGeometry height="230" width="600" x="140" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-59" parent="9o7GIDE-S3LhQBWQ07d4-58" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#d0cee2;strokeColor=#56517e;" value="Утечка" vertex="1">
+          <mxGeometry height="200" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-69" parent="9o7GIDE-S3LhQBWQ07d4-59" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;отсутствует&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;данные открыто публикуются&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-60" parent="9o7GIDE-S3LhQBWQ07d4-58" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Потеря" vertex="1">
+          <mxGeometry height="200" width="120" x="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-71" parent="9o7GIDE-S3LhQBWQ07d4-60" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень: &lt;b&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;значительный&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;данные критичны для бизнес-процессов и их утрата повлечёт простой и потерю продаж&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-61" parent="9o7GIDE-S3LhQBWQ07d4-58" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Искажение" vertex="1">
+          <mxGeometry height="200" width="120" x="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-72" parent="9o7GIDE-S3LhQBWQ07d4-61" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;искажение данных о предлагаемых объектах может повлечь юридические претензии со стороны клиентов и разрушительный репутационный ущерб&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-62" parent="9o7GIDE-S3LhQBWQ07d4-58" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="&lt;div&gt;Некачественные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="200" width="120" x="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-73" parent="9o7GIDE-S3LhQBWQ07d4-62" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;значительный&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;предоставление некачественной информации об объектах нанесет репутационный ущерб, уменьшит клиентскую базу и снизит продажи&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-68" parent="9o7GIDE-S3LhQBWQ07d4-58" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Обесценивание" vertex="1">
+          <mxGeometry height="200" width="120" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-74" parent="9o7GIDE-S3LhQBWQ07d4-68" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;значительный&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;устаревшие данные вызовут тот же эффект, что и некачественные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-75" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-3" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.001;entryY=0.063;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=1;labelBackgroundColor=none;endArrow=none;endFill=0;curved=1;" target="9o7GIDE-S3LhQBWQ07d4-58">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="370" />
+              <mxPoint x="790" y="-55" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-76" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=30;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#bac8d3;strokeColor=#23445d;" value="Риски" vertex="1">
+          <mxGeometry height="380" width="600" x="1000" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-77" parent="9o7GIDE-S3LhQBWQ07d4-76" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#d0cee2;strokeColor=#56517e;" value="Утечка" vertex="1">
+          <mxGeometry height="350" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-78" parent="9o7GIDE-S3LhQBWQ07d4-77" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Критически актуально: уже есть инциденты. Есть&amp;nbsp;проблемы с API партнёров: контракты позволяют получать данные, к которым не должно быть доступа&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Нарушение требований законодательства РФ (152-ФЗ) может привести к крупным штрафам.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Утечка финансовых данных может привести к мошенничеству.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="310" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-79" parent="9o7GIDE-S3LhQBWQ07d4-76" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Потеря" vertex="1">
+          <mxGeometry height="350" width="120" x="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-80" parent="9o7GIDE-S3LhQBWQ07d4-79" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря данных о сделках может привести к юридическим спорам&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Персональные данные требуются для соответствия законодательству.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря этих данных сделает не возможным оказание услуг клиентам и остановит бизнес не продолжительное время.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-81" parent="9o7GIDE-S3LhQBWQ07d4-76" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Искажение" vertex="1">
+          <mxGeometry height="350" width="120" x="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-82" parent="9o7GIDE-S3LhQBWQ07d4-81" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Аналогично потере данных, но даже с большими юридическими рисками и пространством для мошеннических действий.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-83" parent="9o7GIDE-S3LhQBWQ07d4-76" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="&lt;div&gt;Некачественные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="350" width="120" x="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-84" parent="9o7GIDE-S3LhQBWQ07d4-83" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Могут привести к ошибкам при проведении онлайн-сделок&lt;/div&gt;" vertex="1">
+          <mxGeometry height="300" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-85" parent="9o7GIDE-S3LhQBWQ07d4-76" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Обесценивание" vertex="1">
+          <mxGeometry height="350" width="120" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-86" parent="9o7GIDE-S3LhQBWQ07d4-85" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;незначительный&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Устаревшие персональные данные могут привести к ошибкам при проведении сделок, интеграции с госорганами и начислении ЖКУ, но риск низкий, так как данные регулярно обновляются при взаимодействии с пользователями." vertex="1">
+          <mxGeometry height="310" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-87" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-5" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.059;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=1;labelBackgroundColor=none;endArrow=none;endFill=0;curved=1;" target="9o7GIDE-S3LhQBWQ07d4-76">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="320" />
+              <mxPoint x="1035" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-88" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=30;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#bac8d3;strokeColor=#23445d;" value="Риски" vertex="1">
+          <mxGeometry height="490" width="600" x="110" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-89" parent="9o7GIDE-S3LhQBWQ07d4-88" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#d0cee2;strokeColor=#56517e;" value="Утечка" vertex="1">
+          <mxGeometry height="460" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-90" parent="9o7GIDE-S3LhQBWQ07d4-89" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Компрометация учётных данных и конфигурации безопасности&amp;nbsp; может привести к&amp;nbsp;&lt;/div&gt;&lt;div&gt;несанкционир-му доступу, или даже полному контролю над системами.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Утечка данных интеграций с госорганами (СМЭВ) может привести к серьёзным правовым последствиям.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Утечка платёжной информации (токенов, ключей доступа к платёжным системам) может привести к несанкционированным списаниям средств клиентов и собственников, финансовым потерям.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="410" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-91" parent="9o7GIDE-S3LhQBWQ07d4-88" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Потеря" vertex="1">
+          <mxGeometry height="460" width="120" x="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-92" parent="9o7GIDE-S3LhQBWQ07d4-91" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря данных учетных записей&amp;nbsp; приведет к остановке интеграций и в целом невозможности использования системы, понадобится длительное восстановление.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря конфигураций безопасности может привести к компрометации системы.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря токенов платежей или ключей доступа к платёжным системам может привести к невозможности обработки платежей за ЖКУ и проведения онлайн-сделок.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="390" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-93" parent="9o7GIDE-S3LhQBWQ07d4-88" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Искажение" vertex="1">
+          <mxGeometry height="460" width="120" x="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-94" parent="9o7GIDE-S3LhQBWQ07d4-93" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Искажение правил безопасности может открыть несанкционированный доступ или привести к остановке системы.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Искажение токенов платежей или ключей доступа к платёжным системам может привести к ошибкам при обработке платежей, двойным списаниям или невозможности проведения транзакций&lt;/div&gt;" vertex="1">
+          <mxGeometry height="420" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-95" parent="9o7GIDE-S3LhQBWQ07d4-88" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="&lt;div&gt;Некачественные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="460" width="120" x="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-96" parent="9o7GIDE-S3LhQBWQ07d4-95" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Некачественные политики безопасности могут породить пробелы в защите.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Некачественные платежные данные приведут к невозможности обработки платежей ЖКУ и сделок.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="410" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-97" parent="9o7GIDE-S3LhQBWQ07d4-88" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Обесценивание" vertex="1">
+          <mxGeometry height="460" width="120" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-98" parent="9o7GIDE-S3LhQBWQ07d4-97" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;незначительный&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Секретные данные (ключи, токены) могут устареть при ротации, но это нормальный процесс.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Устаревшая платежная информация приведет к невозможности осуществления платежей, но это ожидаемкая ситуация и должна обрабатываться на уровне бизнес-процессов.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="410" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-99" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-6" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.002;entryY=0.068;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=1;labelBackgroundColor=none;endArrow=none;endFill=0;curved=1;" target="9o7GIDE-S3LhQBWQ07d4-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="680" />
+              <mxPoint x="50" y="942" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-100" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=30;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#bac8d3;strokeColor=#23445d;" value="Риски" vertex="1">
+          <mxGeometry height="280" width="600" x="-760" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-101" parent="9o7GIDE-S3LhQBWQ07d4-100" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#d0cee2;strokeColor=#56517e;" value="Утечка" vertex="1">
+          <mxGeometry height="250" width="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-102" parent="9o7GIDE-S3LhQBWQ07d4-101" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;значительный&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Утечка аналитических данных раскроет конкурентам стратегию развития компании.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Утечка технических данных поможет злоумышленникам в организации атак на системы компании.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-103" parent="9o7GIDE-S3LhQBWQ07d4-100" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Потеря" vertex="1">
+          <mxGeometry height="250" width="120" x="120" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-104" parent="9o7GIDE-S3LhQBWQ07d4-103" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень: &lt;b&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;значительный&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря аналитических данных затруднит управление и планирование деятельности компании.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Потеря технических данных может привести к простою системы компании.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-105" parent="9o7GIDE-S3LhQBWQ07d4-100" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Искажение" vertex="1">
+          <mxGeometry height="250" width="120" x="240" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-106" parent="9o7GIDE-S3LhQBWQ07d4-105" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;критический&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Искажение аналитических данных приведет к неправильным управленческим решениям.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Искажение технических данных затруднит поддержку системы компании.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-107" parent="9o7GIDE-S3LhQBWQ07d4-100" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="&lt;div&gt;Некачественные&lt;/div&gt;&lt;div&gt;данные&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="120" x="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-108" parent="9o7GIDE-S3LhQBWQ07d4-107" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span style=&quot;color: rgb(204, 102, 0);&quot;&gt;значительный&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Некачественные внутренние данные снижают эффективность бизнес-аналитики и принятия решений.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-109" parent="9o7GIDE-S3LhQBWQ07d4-100" style="swimlane;startSize=40;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;strokeColor=#56517e;align=center;verticalAlign=middle;fontStyle=1;fillColor=#d0cee2;" value="Обесценивание" vertex="1">
+          <mxGeometry height="250" width="120" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-110" parent="9o7GIDE-S3LhQBWQ07d4-109" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=top;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=0;labelBackgroundColor=none;" value="&lt;div&gt;Уровень:&lt;/div&gt;&lt;div&gt;&lt;b&gt;незначительный&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Устаревшие метрики и отчёты теряют ценность для принятия решений.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Риск довольно незначительный, т.к. данные регулярно обновляются.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-112" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-4" style="edgeStyle=orthogonalEdgeStyle;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.966;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=1;labelBackgroundColor=none;endArrow=none;endFill=0;curved=1;" target="9o7GIDE-S3LhQBWQ07d4-100">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="330" />
+              <mxPoint x="-180" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-114" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-113" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=1;labelBackgroundColor=none;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-113" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Технические детали и конфигурации системы" vertex="1">
+          <mxGeometry height="60" width="160" x="-100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-117" edge="1" parent="1" source="9o7GIDE-S3LhQBWQ07d4-116" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;fontStyle=1;labelBackgroundColor=none;endArrow=none;endFill=0;" target="9o7GIDE-S3LhQBWQ07d4-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9o7GIDE-S3LhQBWQ07d4-116" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;labelBackgroundColor=none;fillColor=#cce5ff;strokeColor=#36393d;" value="Конфигурации безопасности (firewall, Active Directory и т.п)" vertex="1">
+          <mxGeometry height="60" width="160" x="250" y="790" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

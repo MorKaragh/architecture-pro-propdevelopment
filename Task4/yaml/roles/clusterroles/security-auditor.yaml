@@ -1,0 +1,21 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: security-auditor
+rules:
+# Чтение всех ресурсов
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["get", "list", "watch"]
+# Просмотр секретов (привилегированное право)
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["get", "list", "watch"]
+# Доступ к событиям безопасности
+- apiGroups: [""]
+  resources: ["events"]
+  verbs: ["get", "list", "watch"]
+# Доступ к аудит-логам
+- nonResourceURLs: ["/api/*", "/apis/*", "/healthz", "/livez", "/readyz"]
+  verbs: ["get"]
+

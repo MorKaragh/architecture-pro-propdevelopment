@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: devops-cluster-admin-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: propdev-cluster-admin
+subjects:
+- kind: User
+  name: devops-engineer
+  apiGroup: rbac.authorization.k8s.io
+

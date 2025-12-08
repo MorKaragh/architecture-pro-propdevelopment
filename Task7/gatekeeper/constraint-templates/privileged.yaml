@@ -1,0 +1,60 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: k8srequiredsecuritycontexts
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sRequiredSecurityContexts
+      validation:
+        openAPIV3Schema:
+          type: object
+          properties:
+            privileged:
+              type: boolean
+            readOnlyRootFilesystem:
+              type: boolean
+            runAsNonRoot:
+              type: boolean
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8srequiredsecuritycontexts
+
+        violation[{"msg": msg}] {
+            container := input.review.object.spec.containers[_]
+            container.securityContext.privileged == true
+            msg := sprintf("Container '%v' must not run in privileged mode", [container.name])
+        }
+
+        violation[{"msg": msg}] {
+            container := input.review.object.spec.containers[_]
+            not container.securityContext.readOnlyRootFilesystem
+            msg := sprintf("Container '%v' must have readOnlyRootFilesystem set to true", [container.name])
+        }
+
+        violation[{"msg": msg}] {
+            container := input.review.object.spec.containers[_]
+            not container.securityContext.runAsNonRoot
+            msg := sprintf("Container '%v' must have runAsNonRoot set to true", [container.name])
+        }
+
+        violation[{"msg": msg}] {
+            container := input.review.object.spec.initContainers[_]
+            container.securityContext.privileged == true
+            msg := sprintf("Init container '%v' must not run in privileged mode", [container.name])
+        }
+
+        violation[{"msg": msg}] {
+            container := input.review.object.spec.initContainers[_]
+            not container.securityContext.readOnlyRootFilesystem
+            msg := sprintf("Init container '%v' must have readOnlyRootFilesystem set to true", [container.name])
+        }
+
+        violation[{"msg": msg}] {
+            container := input.review.object.spec.initContainers[_]
+            not container.securityContext.runAsNonRoot
+            msg := sprintf("Init container '%v' must have runAsNonRoot set to true", [container.name])
+        }
+
