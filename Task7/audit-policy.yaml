@@ -1,0 +1,34 @@
+apiVersion: audit.k8s.io/v1
+kind: Policy
+rules:
+  # Аудит создания и обновления подов
+  - level: RequestResponse
+    verbs: ["create", "update", "patch"]
+    resources:
+      - group: ""
+        resources: ["pods"]
+    namespaces: ["audit-zone"]
+  
+  # Аудит отклонённых запросов
+  - level: RequestResponse
+    verbs: ["create", "update", "patch"]
+    resources:
+      - group: ""
+        resources: ["pods"]
+    omitStages: []
+  
+  # Аудит событий Gatekeeper
+  - level: RequestResponse
+    verbs: ["create", "update"]
+    resources:
+      - group: "constraints.gatekeeper.sh"
+        resources: ["*"]
+  
+  # Аудит событий PodSecurity
+  - level: Metadata
+    verbs: ["create", "update", "patch"]
+    resources:
+      - group: ""
+        resources: ["pods"]
+    omitStages: ["RequestReceived"]
+
